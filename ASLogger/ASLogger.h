@@ -6,8 +6,15 @@
 //  Copyright (c) 2014 Dan Zinngrabe. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef __ASLOGGER_H__
+#define __ASLOGGER_H__
 
-@interface ASLogger : NSObject
+#import <CoreFoundation/CoreFoundation.h>
 
-@end
+#import "asl_logger.h"
+
+#if PRAGMA_ONCE
+#pragma once
+#endif
+
+#endif

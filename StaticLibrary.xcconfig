@@ -1,0 +1,21 @@
+//
+//  StaticLibrary.xcconfig
+//  NSPredicateDictionary
+//
+//  Created by Dan Zinngrabe on 6/24/14.
+//  Copyright (c) 2014 Dan Zinngrabe. All rights reserved.
+//
+
+ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
+SDKROOT = iphoneos
+VALID_ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
+ONLY_ACTIVE_ARCH = NO
+DEAD_CODE_STRIPPING = NO
+MACH_O_TYPE = staticlib
+MACOSX_DEPLOYMENT_TARGET = $(inherited)
+SKIP_INSTALL = YES
+PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include
+PUBLIC_HEADERS_FOLDER_PATH = include/${PRODUCT_NAME}
+HEADER_SEARCH_PATHS = $(inherited) ${TARGET_BUILD_DIR}/include
+
+#include "Warnings.xcconfig"

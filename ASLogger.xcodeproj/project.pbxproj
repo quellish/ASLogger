@@ -7,40 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BC73E53198DDED5006B5B3C /* ASLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BC73E52198DDED5006B5B3C /* ASLogger.h */; };
-		1BC73E55198DDED5006B5B3C /* ASLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC73E54198DDED5006B5B3C /* ASLogger.m */; };
-		1BC73E5B198DDED5006B5B3C /* libASLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC73E4F198DDED5006B5B3C /* libASLogger.a */; };
+		1BC73E6B198DDF1D006B5B3C /* asl_logger.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BC73E69198DDF1D006B5B3C /* asl_logger.c */; };
+		1BC73E6F198DDFDB006B5B3C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */; };
+		1BC73E74198DE09D006B5B3C /* ASLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC73E52198DDED5006B5B3C /* ASLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BC73E75198DE0A0006B5B3C /* asl_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC73E6A198DDF1D006B5B3C /* asl_logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1BC73E5C198DDED5006B5B3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1BC73E47198DDED5006B5B3C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BC73E4E198DDED5006B5B3C;
-			remoteInfo = ASLogger;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1BC73E4D198DDED5006B5B3C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				1BC73E53198DDED5006B5B3C /* ASLogger.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1BC73E4F198DDED5006B5B3C /* libASLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC73E52198DDED5006B5B3C /* ASLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASLogger.h; sourceTree = "<group>"; };
-		1BC73E54198DDED5006B5B3C /* ASLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASLogger.m; sourceTree = "<group>"; };
-		1BC73E5A198DDED5006B5B3C /* ASLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BC73E60198DDED5006B5B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC73E69198DDF1D006B5B3C /* asl_logger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asl_logger.c; sourceTree = "<group>"; };
+		1BC73E6A198DDF1D006B5B3C /* asl_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asl_logger.h; sourceTree = "<group>"; };
+		1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		1BC73E6D198DDF65006B5B3C /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1BC73E71198DDFFD006B5B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,14 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BC73E57198DDED5006B5B3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BC73E5B198DDED5006B5B3C /* libASLogger.a in Frameworks */,
+				1BC73E6F198DDFDB006B5B3C /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +39,10 @@
 		1BC73E46198DDED5006B5B3C = {
 			isa = PBXGroup;
 			children = (
+				1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */,
+				1BC73E6D198DDF65006B5B3C /* Warnings.xcconfig */,
 				1BC73E51198DDED5006B5B3C /* ASLogger */,
-				1BC73E5E198DDED5006B5B3C /* ASLoggerTests */,
+				1BC73E70198DDFE2006B5B3C /* Frameworks */,
 				1BC73E50198DDED5006B5B3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				1BC73E4F198DDED5006B5B3C /* libASLogger.a */,
-				1BC73E5A198DDED5006B5B3C /* ASLoggerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,28 +59,34 @@
 			isa = PBXGroup;
 			children = (
 				1BC73E52198DDED5006B5B3C /* ASLogger.h */,
-				1BC73E54198DDED5006B5B3C /* ASLogger.m */,
+				1BC73E69198DDF1D006B5B3C /* asl_logger.c */,
+				1BC73E6A198DDF1D006B5B3C /* asl_logger.h */,
 			);
 			path = ASLogger;
 			sourceTree = "<group>";
 		};
-		1BC73E5E198DDED5006B5B3C /* ASLoggerTests */ = {
+		1BC73E70198DDFE2006B5B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BC73E5F198DDED5006B5B3C /* Supporting Files */,
+				1BC73E71198DDFFD006B5B3C /* Foundation.framework */,
+				1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */,
 			);
-			path = ASLoggerTests;
-			sourceTree = "<group>";
-		};
-		1BC73E5F198DDED5006B5B3C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1BC73E60198DDED5006B5B3C /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC73E73198DE095006B5B3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC73E74198DE09D006B5B3C /* ASLogger.h in Headers */,
+				1BC73E75198DE0A0006B5B3C /* asl_logger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1BC73E4E198DDED5006B5B3C /* ASLogger */ = {
@@ -114,7 +95,7 @@
 			buildPhases = (
 				1BC73E4B198DDED5006B5B3C /* Sources */,
 				1BC73E4C198DDED5006B5B3C /* Frameworks */,
-				1BC73E4D198DDED5006B5B3C /* CopyFiles */,
+				1BC73E73198DE095006B5B3C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -124,24 +105,6 @@
 			productName = ASLogger;
 			productReference = 1BC73E4F198DDED5006B5B3C /* libASLogger.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		1BC73E59198DDED5006B5B3C /* ASLoggerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BC73E66198DDED5006B5B3C /* Build configuration list for PBXNativeTarget "ASLoggerTests" */;
-			buildPhases = (
-				1BC73E56198DDED5006B5B3C /* Sources */,
-				1BC73E57198DDED5006B5B3C /* Frameworks */,
-				1BC73E58198DDED5006B5B3C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1BC73E5D198DDED5006B5B3C /* PBXTargetDependency */,
-			);
-			name = ASLoggerTests;
-			productName = ASLoggerTests;
-			productReference = 1BC73E5A198DDED5006B5B3C /* ASLoggerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -154,10 +117,6 @@
 				TargetAttributes = {
 					1BC73E4E198DDED5006B5B3C = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					1BC73E59198DDED5006B5B3C = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 1BC73E4E198DDED5006B5B3C;
 					};
 				};
 			};
@@ -174,46 +133,20 @@
 			projectRoot = "";
 			targets = (
 				1BC73E4E198DDED5006B5B3C /* ASLogger */,
-				1BC73E59198DDED5006B5B3C /* ASLoggerTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1BC73E58198DDED5006B5B3C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BC73E4B198DDED5006B5B3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC73E55198DDED5006B5B3C /* ASLogger.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BC73E56198DDED5006B5B3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1BC73E6B198DDF1D006B5B3C /* asl_logger.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1BC73E5D198DDED5006B5B3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1BC73E4E198DDED5006B5B3C /* ASLogger */;
-			targetProxy = 1BC73E5C198DDED5006B5B3C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1BC73E61198DDED5006B5B3C /* Debug */ = {
@@ -249,7 +182,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -283,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -292,6 +225,7 @@
 		};
 		1BC73E64198DDED5006B5B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,40 +235,11 @@
 		};
 		1BC73E65198DDED5006B5B3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1BC73E67198DDED5006B5B3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ASLoggerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		1BC73E68198DDED5006B5B3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ASLoggerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -355,14 +260,6 @@
 			buildConfigurations = (
 				1BC73E64198DDED5006B5B3C /* Debug */,
 				1BC73E65198DDED5006B5B3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		1BC73E66198DDED5006B5B3C /* Build configuration list for PBXNativeTarget "ASLoggerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BC73E67198DDED5006B5B3C /* Debug */,
-				1BC73E68198DDED5006B5B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
