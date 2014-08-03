@@ -11,6 +11,7 @@
 		1BC73E6F198DDFDB006B5B3C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */; };
 		1BC73E74198DE09D006B5B3C /* ASLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC73E52198DDED5006B5B3C /* ASLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BC73E75198DE0A0006B5B3C /* asl_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC73E6A198DDF1D006B5B3C /* asl_logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BC73E77198DE11B006B5B3C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1BC73E76198DE11B006B5B3C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1BC73E6D198DDF65006B5B3C /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		1BC73E71198DDFFD006B5B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BC73E76198DE11B006B5B3C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 		1BC73E46198DDED5006B5B3C = {
 			isa = PBXGroup;
 			children = (
+				1BC73E76198DE11B006B5B3C /* README.md */,
 				1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */,
 				1BC73E6D198DDF65006B5B3C /* Warnings.xcconfig */,
 				1BC73E51198DDED5006B5B3C /* ASLogger */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC73E77198DE11B006B5B3C /* README.md in Sources */,
 				1BC73E6B198DDF1D006B5B3C /* asl_logger.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
