@@ -19,11 +19,11 @@
 		1BC73E52198DDED5006B5B3C /* ASLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASLogger.h; sourceTree = "<group>"; };
 		1BC73E69198DDF1D006B5B3C /* asl_logger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asl_logger.c; sourceTree = "<group>"; };
 		1BC73E6A198DDF1D006B5B3C /* asl_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asl_logger.h; sourceTree = "<group>"; };
-		1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
-		1BC73E6D198DDF65006B5B3C /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		1BC73E71198DDFFD006B5B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BC73E76198DE11B006B5B3C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1BE009E219DE360B00C73DEA /* ASLogger.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ASLogger.xcconfig; sourceTree = "<group>"; };
+		1BE009E319DE361200C73DEA /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		1BE009E419DE364500C73DEA /* Analyzer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Analyzer.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +42,9 @@
 			isa = PBXGroup;
 			children = (
 				1BC73E76198DE11B006B5B3C /* README.md */,
-				1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */,
-				1BC73E6D198DDF65006B5B3C /* Warnings.xcconfig */,
+				1BE009E219DE360B00C73DEA /* ASLogger.xcconfig */,
+				1BE009E319DE361200C73DEA /* Warnings.xcconfig */,
+				1BE009E419DE364500C73DEA /* Analyzer.xcconfig */,
 				1BC73E51198DDED5006B5B3C /* ASLogger */,
 				1BC73E70198DDFE2006B5B3C /* Frameworks */,
 				1BC73E50198DDED5006B5B3C /* Products */,
@@ -71,7 +72,6 @@
 		1BC73E70198DDFE2006B5B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BC73E71198DDFFD006B5B3C /* Foundation.framework */,
 				1BC73E6E198DDFDB006B5B3C /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -229,7 +229,7 @@
 		};
 		1BC73E64198DDED5006B5B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */;
+			baseConfigurationReference = 1BE009E219DE360B00C73DEA /* ASLogger.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -239,7 +239,7 @@
 		};
 		1BC73E65198DDED5006B5B3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BC73E6C198DDF65006B5B3C /* StaticLibrary.xcconfig */;
+			baseConfigurationReference = 1BE009E219DE360B00C73DEA /* ASLogger.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -266,6 +266,7 @@
 				1BC73E65198DDED5006B5B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

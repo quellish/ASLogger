@@ -9,7 +9,7 @@
 #ifndef __ASLOGGER_H__
 #define __ASLOGGER_H__
 
-#import <CoreFoundation/CoreFoundation.h>
+@import CoreFoundation;
 
 #import "asl_logger.h"
 

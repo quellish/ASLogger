@@ -1,14 +1,13 @@
 //
-//  StaticLibrary.xcconfig
-//  NSPredicateDictionary
+//  ASLogger.xcconfig
+//  ASLogger
 //
-//  Created by Dan Zinngrabe on 6/24/14.
+//  Created by Dan Zinngrabe on 10/2/14.
 //  Copyright (c) 2014 Dan Zinngrabe. All rights reserved.
 //
 
-ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
-SDKROOT = iphoneos
 VALID_ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
+ARCHS = $(ARCHS_STANDARD_INCLUDING_64_BIT)
 ONLY_ACTIVE_ARCH = NO
 DEAD_CODE_STRIPPING = NO
 MACH_O_TYPE = staticlib
@@ -16,6 +15,9 @@ MACOSX_DEPLOYMENT_TARGET = $(inherited)
 SKIP_INSTALL = YES
 PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include
 PUBLIC_HEADERS_FOLDER_PATH = include/${PRODUCT_NAME}
-HEADER_SEARCH_PATHS = $(inherited) ${TARGET_BUILD_DIR}/include
+
+GCC_DYNAMIC_NO_PIC = NO
+LD_NO_PIE = NO
 
 #include "Warnings.xcconfig"
+#include "Analyzer.xcconfig"
