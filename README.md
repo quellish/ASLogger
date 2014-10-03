@@ -1,3 +1,5 @@
+##ASLogger
+An (almost) drop in replacement for `NSLog()` that logs using the [Apple System Log](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/asl.3.html). More flexible, performant, and accepted than logging using NSLog.
 
 ###Common Usage
 
@@ -30,15 +32,15 @@ Example of WarningLog:
 
 Example of NoticeLog:
 
-	NoticeLog();
+	NoticeLog(@"Eh, something happened"s");
 
 Example of InfoLog:
 
-	InfoLog();
+	InfoLog(@"I don't want to bother you, but...");
 
 Example of DebugLog:
 
-	DebugLog();
+    DebugLog(@"OMG the string was #nil!");
 
 
 Apple best practices for logging are documented in the [Daemons and Services Programming Guide](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/LoggingErrorsAndWarnings.html)
